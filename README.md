@@ -29,17 +29,17 @@ A [versão online](https://github.com/21-lessons/21-lessons.github.io) deste liv
 
 Graças aos incríveis membros da comunidade Bitcoin, o livro foi [traduzido para vários idiomas]https://21lessons.com/translations), incluindo:
 
-* Spanish
-* Turkish
-* Chinese
-* [German](https://amzn.to/2VZXe2o)
-* Finnish
-* [Brazilian Portuguese](https://github.com/KoreaComK/21lessons-book)
-* Japanese
-* Greek
-* Persian
-* Indonesian
-* Italian
+* Espanhol
+* Turco
+* Chinês
+* [Alemão](https://amzn.to/2VZXe2o)
+* Finlandês
+* [Português-Brasil](https://github.com/KoreaComK/21lessons-book)
+* Japonês
+* Grego
+* Persa
+* Indonésio
+* Italiano
 
 A versão impressa em alemão do livro tem um [repositório separado](https://github.com/21-lessons/21-lessons-book-de), mantido pelo autor.
 
