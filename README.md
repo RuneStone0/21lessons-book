@@ -1,6 +1,6 @@
 # As 21 Lições
 
-Este repositório contém o código-fonte LaTeX para uma versão impressa do *As 21 Lições - O que aprendi ao cair da toca do coelho do Bitcoin*. +
+Este repositório contém o código-fonte LaTeX para uma versão impressa do *As 21 Lições - O que aprendi ao cair da toca do coelho do Bitcoin*.
 
 ![](https://21lessons.com/assets/images/21-lessons-book.png)
 
