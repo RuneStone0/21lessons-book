@@ -60,5 +60,5 @@ Criado com 🧡 por [Gigi](https://dergigi.com/support/).
 
 Traduzido por [KoreaComK](https://twitter.com/KoreaComK).
 
-[![tippin.me](https://badgen.net/badge/%E2%9A%A1%EF%B8%8Ftippin.me/@koreacomk/FEDE59)](https://paywall.link/to/ProjetosKoreaComK)
+[![tippin.me](https://badgen.net/badge/%E2%9A%A1%EF%B8%8Ftippin.me/@koreacomk/FFDE59)](https://paywall.link/to/ProjetosKoreaComK)
 
