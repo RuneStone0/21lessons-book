@@ -21,6 +21,10 @@ marca a primeira edição do livro, lançado em 24 de dezembro de 2019. Está di
 
 O [branch do e-book](https://github.com/dergigi/21lessons-book/tree/ebook) contém uma versão ligeiramente modificada do código-fonte adequada para construir as versões do livro no formado de e-book.
 
+## Versão em PDF
+
+Se você quiser acessar o versão mais recente do livro em pdf [clique aqui](https://github.com/KoreaComK/21lessons-book/raw/master/pdf/As%2021%20Li%C3%A7%C3%B5es.pdf).
+
 ## Versão Online
 
 A [versão online](https://github.com/21-lessons/21-lessons.github.io) deste livro está disponível gratuitamente no site [21lessons.com](https://21lessons.com), incluindo um versão em áudio feita por Guy Swann do podcast Cryptoconomy. Embora a versão online seja praticamente igual à versão impressa, há algum conteúdo adicional na versão impressa: Um prefácio de Hass McCook e uma rápida seção introdutória sobre o livro (e sobre o autor).
