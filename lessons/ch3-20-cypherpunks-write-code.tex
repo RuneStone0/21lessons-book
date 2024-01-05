@@ -1,82 +1,71 @@
-\chapter{Cypherpunks Write Code}
+\chapter{Cypherpunks Skriver Kode}
 \label{les:20}
 
-\begin{chapquote}{Lewis Carroll, \textit{Alice in Wonderland}}
-\enquote{I see you're trying to invent something.}
+\begin{chapquote}{Lewis Carroll, \textit{Alice i Eventyrland}}
+\enquote{Jeg ser, du prøver at opfinde noget.}
 \end{chapquote}
 
-Like many great ideas, Bitcoin didn't come out of nowhere. It was made
-possible by utilizing and combining many innovations and discoveries in
-mathematics, physics, computer science, and other fields. While
-undoubtedly a genius, Satoshi wouldn't have been able to invent Bitcoin
-without the giants on whose shoulders he was standing on.
+Som mange fantastiske idéer kom Bitcoin ikke ud af ingenting. Det blev
+muliggjort ved at anvende og kombinere mange innovationer og opdagelser inden for
+matematik, fysik, datalogi og andre områder. Mens
+uundgåeligt en geni, ville Satoshi ikke have kunnet opfinde Bitcoin
+uden de kæmper, hvis skuldre han stod på.
 
 \begin{quotation}\begin{samepage}
-\enquote{He who only wishes and hopes does not interfere actively with the
-course of events and with the shaping of his own destiny.}
+\enquote{Den, der kun ønsker og håber, blander sig ikke aktivt i begivenhedernes gang
+og i formningen af sin egen skæbne.}
 \begin{flushright} -- Ludwig von Mises\footnote{Ludwig von Mises, \textit{Human Action} \cite{human-action}}
 \end{flushright}\end{samepage}\end{quotation}
 % > <cite>[Ludwig Von Mises]</cite>
 
-One of these giants is Eric Hughes, one of the founders of the cypherpunk
-movement and author of \textit{A Cypherpunk's Manifesto}. It's hard to imagine
-that Satoshi wasn't influenced by this manifesto. It speaks of many things which
-Bitcoin enables and utilizes, such as direct and private transactions,
-electronic money and cash, anonymous systems, and defending privacy with
-cryptography and digital signatures.
+En af disse kæmper er Eric Hughes, en af grundlæggerne af cypherpunk-bevægelsen og forfatter til \textit{A Cypherpunk's Manifesto}. Det er svært at forestille sig, at Satoshi ikke blev påvirket af dette manifest. Det taler om mange ting, som Bitcoin muliggør og udnytter, såsom direkte og private transaktioner, elektroniske penge og kontanter, anonyme systemer og forsvar af privatlivet med kryptografi og digitale signature.
 
 \begin{quotation}\begin{samepage}
-\enquote{Privacy is necessary for an open society in the electronic age.
-[...] Since we desire privacy, we must ensure that each party to a
-transaction have knowledge only of that which is directly necessary
-for that transaction. [...]
-Therefore, privacy in an open society requires anonymous transaction
-systems. Until now, cash has been the primary such system. An
-anonymous transaction system is not a secret transaction system.
+\enquote{Privatliv er nødvendigt for et åbent samfund i den elektroniske tidsalder.
+[...] Da vi ønsker privatliv, skal vi sikre, at hver part i en
+transaktion kun har kendskab til det, der er direkte nødvendigt
+for den transaktion. [...]
+Derfor kræver privatliv i et åbent samfund anonyme transaktionssystemer. Indtil nu har kontanter været det primære sådanne system. Et anonymt transaktionssystem er ikke et hemmeligt transaktionssystem.
 [...]
-We the Cypherpunks are dedicated to building anonymous systems. We are
-defending our privacy with cryptography, with anonymous mail
-forwarding systems, with digital signatures, and with electronic
-money.
-Cypherpunks write code.}
+Vi cypherpunks dedikerer os til at opbygge anonyme systemer. Vi forsvarer vores privatliv med kryptografi, med anonyme mail
+videresendelsessystemer, med digitale signaturer og med elektroniske
+penge.
+Cypherpunks skriver kode.}
 \begin{flushright} -- Eric Hughes\footnote{Eric Hughes, A Cypherpunk's Manifesto \cite{cypherpunk-manifesto}}
 \end{flushright}\end{samepage}\end{quotation}
 
-Cypherpunks do not find comfort in hopes and wishes. They actively
-interfere with the course of events and shape their own destiny.
-Cypherpunks write code.
+Cypherpunks finder ikke trøst i håb og ønsker. De blander sig aktivt
+i begivenhedernes gang og former deres egen skæbne.
+Cypherpunks skriver kode.
 
-Thus, in true cypherpunk fashion, Satoshi sat down and started to write
-code. Code which took an abstract idea and proved to the world that it
-actually worked. Code which planted the seed of a new economic reality.
-Thanks to this code, everyone can verify that this novel system actually
-works, and every 10 minutes or so Bitcoin proofs to the world that it is
-still living.
+Således, i sand cypherpunk-stil, satte Satoshi sig ned og begyndte at skrive
+kode. Kode, der tog en abstrakt idé og beviste for verden, at det rent faktisk fungerede. Kode, der såede frøet til en ny økonomisk virkelighed.
+Takket være denne kode kan alle verificere, at dette nye system rent faktisk
+fungerer, og cirka hvert 10. minut beviser Bitcoin for verden, at det stadig er i live.
 
 \begin{center}
   \includegraphics[width=\textwidth]{assets/images/bitcoin-code-white.png}
-  \captionof{figure}{Code excerpts from Bitcoin version 0.1}
+  \captionof{figure}{Kodeuddrag fra Bitcoin version 0.1}
   \label{fig:bitcoin-code-white}
 \end{center}
 
-To make sure that his innovation transcends fantasy and becomes reality, Satoshi
-wrote code to implement his idea before he wrote the whitepaper. He also made
-sure not to delay\footnote{\enquote{We shouldn't delay forever until every possible
-feature is done.} -- Satoshi Nakamoto~\cite{satoshi-delay}} any release forever.
-After all, \enquote{there's always going to be one more thing to do.}
+For at sikre, at hans innovation transcenderer fantasi og bliver virkelighed, skrev Satoshi
+kode for at implementere sin idé, før han skrev whitepaperet. Han sørgede også for ikke at udsætte\footnote{\enquote{Vi bør ikke udsætte det for evigt, indtil enhver mulig
+funktion er færdig.} -- Satoshi Nakamoto~\cite{satoshi-delay}} enhver udgivelse for evigt.
+Alt i alt, \enquote{der vil altid være én mere ting at gøre.}
 
 \begin{quotation}\begin{samepage}
-\enquote{I had to write all the code before I could convince myself that I
-could solve every problem, then I wrote the paper.}
-\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, Re: Bitcoin P2P e-cash paper \cite{satoshi-mail-code-first}}
+\enquote{Jeg måtte skrive al koden, før jeg kunne overbevise mig selv om, at jeg
+kunne løse hvert problem, derefter skrev jeg papiret.}
+\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, Sv: Bitcoin P2P e-cash paper \cite{satoshi-mail-code-first}}
 \end{flushright}\end{samepage}\end{quotation}
 
-In today's world of endless promises and doubtful execution, an exercise
-in dedicated building was desperately needed. Be deliberate, convince
-yourself that you can actually solve the problems, and implement the
-solutions. We should all aim to be a bit more cypherpunk.
+I nutidens verden af endeløse løfter og tvivlsom udførelse var der desperat behov for en øvelse
+i dedikeret opbygning. Vær omhyggelig, overbevis
+dig selv om, at du rent faktisk kan løse problemerne, og implementer
+løsningerne. Vi bør alle stræbe efter at være lidt mere cypherpunk.
 
-\paragraph{Bitcoin taught me that cypherpunks write code.}
+\paragraph{Bitcoin lærte mig, at cypherpunks skriver kode.}
 
 % ---
 %
