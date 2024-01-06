@@ -28,14 +28,15 @@ Bitcoin gør op med fristelsen til at trykke penge på en genial
 måde. Satoshi var opmærksom på vores grådighed og fejlbarlighed --- derfor 
 valgte han noget mere pålideligt end menneskelig tilbageholdenhed: matematik.
 
-\begin{center}
+\begin{figure}[htbp]
   \centering
   \begin{equation}
-  \sum\limits_{i=0}^{32} \frac{21000 \lfloor \frac{50*10^8}{2^i} \rfloor}{10^8}
+    \sum_{i=0}^{32} \frac{21000 \lfloor 
+    \frac{50 \cdot 10^8}{2^i} \rfloor}{10^8}
   \end{equation}
-  \captionof{figure}{Bitcoin's supply formula}
+  \caption{Bitcoin's supply formula}
   \label{fig:supply-formula-white}
-\end{center}
+\end{figure}
 
 Selvom denne formel er nyttig til at beskrive Bitcoins forsyning, er den faktisk
 ingen steder at finde i koden. Udstedelse af nye bitcoins sker på en
@@ -45,11 +46,12 @@ at sammenfatte hurtigt, hvad der sker under motorhjelmen. Hvad der virkelig
 sker, kan bedst ses ved at se på ændringen i blokbelønningen, belønningen 
 udbetalt til den, der finder en gyldig blok, hvilket groft sker hvert 10. minut.
 
-\begin{center}
+\begin{figure}[htbp]
+  \centering
   \includegraphics[width=\textwidth]{assets/images/you-are-here.png}
-  \captionof{figure}{Bitcoins kontrollerede forsyning}
-  \label{fig:you-are-here.png}
-\end{center}
+  \caption{Bitcoins kontrollerede forsyning}
+  \label{fig:you-are-here}
+\end{figure}
 
 Formler, logaritmiske funktioner og eksponentialfunktioner er ikke nøjagtigt
 intuitive at forstå. Konceptet \textit{lydighed} kan være lettere at
@@ -110,14 +112,14 @@ udvundet. I de sidste få år er der blevet udvundet omkring 3100 tons guld
 Ved hjælp af disse tal kan vi nemt beregne lager-til-strøm-forholdet for
 guld (se figur~\ref{fig:stock-to-flow-gold}).
 
-\begin{center}
+\begin{figure}[htbp]
   \centering
   \begin{equation}
-  \frac{190,000 t}{3,100 t} = ~ 61
+    \frac{190,000 \, t}{3,100 \, t} = 61
   \end{equation}
-  \captionof{figure}{Lager-til-flow-forholdet for guld}
+  \caption{Lager-til-flow-forholdet for guld}
   \label{fig:stock-to-flow-gold}
-\end{center}
+\end{figure}
 
 Intet har en højere lager-til-flow-forhold end guld. Dette er grunden til, at 
 guld indtil nu var den hårdeste, mest lydende valuta, der eksisterede. Det 
@@ -139,12 +141,12 @@ lager-til-flow-forhold vil være. Advarsel: det vil være højt.
 Hvor højt? Nå, det viser sig, at Bitcoin vil blive uendeligt svært (se
 Figur~\ref{fig:stock-to-flow-white-cropped}).
 
-\begin{center}
-  \includegraphics[width=\textwidth]
-  {assets/images/stock-to-flow-white-cropped.png}
-  \captionof{figure}{Visualisering af lager og flow for USD, guld og Bitcoin}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{assets/images/stock-to-flow-white-cropped.png}
+  \caption{Visualisering af lager og flow for USD, guld og Bitcoin}
   \label{fig:stock-to-flow-white-cropped}
-\end{center}
+\end{figure}
 
 \paragraph{}
 På grund af en eksponentiel reduktion af minedriftsbelønningen vil 
@@ -157,12 +159,12 @@ minedriftsbitcoin per år falde under 100 bitcoin om 50 år og under 1 bitcoin o
 og stoppe effektivt produktionen af bitcoin. Dette er et langt spil. Hvis du 
 læser dette, er du stadig tidligt på den.
 
-\begin{center}
+\begin{figure}[htbp]
+  \centering
   \includegraphics[width=\textwidth]{assets/images/soundness-over-time.png}
-  \captionof{figure}{Stigende lager-til-flow-forhold for bitcoin sammenlignet 
-  med guld}
+  \caption{Stigende lager-til-flow-forhold for bitcoin sammenlignet med guld}
   \label{fig:soundness-over-time}
-\end{center}
+\end{figure}
 
 Når bitcoin nærmer sig uendeligt lager-til-flow-forhold, vil det være den
 lydende valuta, der nogensinde har eksisteret. Uendelig soliditet er svær at 
