@@ -2,21 +2,35 @@
 \label{les:15}
 
 \begin{chapquote}{Lewis Carroll, \textit{Alice i Eventyrland}}
-\enquote{Lad mig se: fire gange fem er tolv, og fire gange seks er tretten, og fire gange syv er fjorten - åh nej! Jeg vil aldrig nå tyve på denne måde!}
+\enquote{Lad mig se: fire gange fem er tolv, og fire gange seks er tretten, 
+og fire gange syv er fjorten - åh nej! Jeg vil aldrig nå tyve på denne måde!}
 \end{chapquote}
 
-Tal er en essentiel del af vores hverdag. Store tal er dog ikke noget, de fleste af os er alt for fortrolige med. De største tal, vi måske støder på i hverdagen, ligger i størrelsesordenen af millioner, milliarder eller billioner. Vi kan læse om millioner af mennesker i fattigdom, milliarder af dollars brugt på bankredninger og billioner af national gæld. Selvom det er svært at forstå disse overskrifter, er vi på en måde komfortable med størrelsen af disse tal.
+Tal er en essentiel del af vores hverdag. Store tal er dog ikke noget, de 
+fleste af os er alt for fortrolige med. De største tal, vi måske støder på 
+i hverdagen, ligger i størrelsesordenen af millioner, milliarder eller 
+billioner. Vi kan læse om millioner af mennesker i fattigdom, milliarder af 
+dollars brugt på bankredninger og billioner af national gæld. Selvom det er 
+svært at forstå disse overskrifter, er vi på en måde komfortable med 
+størrelsen af disse tal.
 
-Selvom vi måske virker komfortable med milliarder og billioner, begynder vores intuition allerede at svigte med tal af denne størrelsesorden. Har du en fornemmelse af, hvor lang tid du ville skulle vente, før en million/milliard/billion sekunder passerer? Hvis du er som mig, er du tabt uden faktisk at knuse tallene.
+Selvom vi måske virker komfortable med milliarder og billioner, begynder 
+vores intuition allerede at svigte med tal af denne størrelsesorden. Har 
+du en fornemmelse af, hvor lang tid du ville skulle vente, før en 
+million/milliard/billion sekunder passerer? Hvis du er som mig, er du tabt 
+uden faktisk at knuse tallene.
 
-Lad os tage et nærmere kig på dette eksempel: forskellen mellem hver er en stigning med tre størrelsesordener: $10^6$, $10^9$, $10^{12}$. At tænke i sekunder er ikke særlig nyttigt, så lad os oversætte dette til noget, vi kan forstå:
+Lad os tage et nærmere kig på dette eksempel: forskellen mellem hver er en 
+stigning med tre størrelsesordener: $10^6$, $10^9$, $10^{12}$. At tænke i
+sekunder er ikke særlig nyttigt, så lad os oversætte dette til noget, vi 
+kan forstå:
 
 \begin{itemize}
   \item $10^6$: Ét million sekunder var $1 \frac{1}{2}$ uge siden.
   \item $10^9$: Ét milliard sekunder var næsten 32 år siden.
   \item $10^{12}$: Ét billion sekunder siden var Manhattan dækket af et tykt lag
-  is.\footnote{Ét billion sekunder ($10^{12}$) var $31710$ år siden. Den Sidste Glaciale
-  Maksimum var for $33,000$ år siden.~\cite{wiki:LGM}}
+  is.\footnote{Ét billion sekunder ($10^{12}$) var $31710$ år siden. Den Sidste 
+  Glaciale Maksimum var for $33,000$ år siden.~\cite{wiki:LGM}}
 \end{itemize}
 
 \begin{center}
@@ -25,19 +39,35 @@ Lad os tage et nærmere kig på dette eksempel: forskellen mellem hver er en sti
   \label{fig:xkcd-1225}
 \end{center}
 
-Så snart vi træder ind i den næsten astronomiske verden af moderne kryptografi, svigter vores intuition katastrofalt. Bitcoin er bygget omkring store tal og den virtuelle umulighed af at gætte dem. Disse tal er langt, langt større end noget, vi måske støder på i dagligdagen. Mange størrelsesordener større. At forstå, hvor store disse tal virkelig er, er afgørende for at forstå Bitcoin som helhed.
+Så snart vi træder ind i den næsten astronomiske verden af moderne kryptografi, 
+svigter vores intuition katastrofalt. Bitcoin er bygget omkring store tal og 
+den virtuelle umulighed af at gætte dem. Disse tal er langt, langt større 
+end noget, vi måske støder på i dagligdagen. Mange størrelsesordener større. 
+At forstå, hvor store disse tal virkelig er, er afgørende for at forstå 
+Bitcoin som helhed.
 
-Lad os tage SHA-256\footnote{SHA-256 er en del af SHA-2-familien af kryptografiske hashfunktioner udviklet af NSA.~\cite{wiki:sha2}}, en af hashfunktionerne\footnote{Bitcoin bruger SHA-256 i sin blokhåndteringsalgoritme.~\cite{btcwiki:block-hashing}} brugt i Bitcoin, som et konkret eksempel. Det er kun naturligt at tænke på 256 bits som \enquote{to hundrede seksoghalvtreds,} hvilket slet ikke er et stort tal. Men tallet i SHA-256 handler om størrelsesordener - noget vores hjerner ikke er godt rustet til at håndtere.
+Lad os tage SHA-256\footnote{SHA-256 er en del af SHA-2-familien af 
+kryptografiske hashfunktioner udviklet af NSA.~\cite{wiki:sha2}}, en af 
+hashfunktionerne\footnote{Bitcoin bruger SHA-256 i sin 
+blokhåndteringsalgoritme.~\cite{btcwiki:block-hashing}} brugt i Bitcoin, 
+som et konkret eksempel. Det er kun naturligt at tænke på 256 bits som 
+\enquote{to hundrede seksoghalvtreds,} hvilket slet ikke er et stort tal. 
+Men tallet i SHA-256 handler om størrelsesordener - noget vores hjerner ikke 
+er godt rustet til at håndtere.
 
-Mens bitlængde er en praktisk metrik, går den sande betydning af 256-bit sikkerhed tabt i oversættelsen. På samme måde som millioner ($10^6$) og milliarder ($10^9$) ovenfor, er tallet i SHA-256 om størrelsesordener ($2^{256}$).
+Mens bitlængde er en praktisk metrik, går den sande betydning af 256-bit 
+sikkerhed tabt i oversættelsen. På samme måde som millioner ($10^6$) og 
+milliarder ($10^9$) ovenfor, er tallet i SHA-256 om 
+størrelsesordener ($2^{256}$).
 
 Så, hvor stærk er SHA-256 præcist?
 
 \begin{quotation}\begin{samepage}
-\enquote{SHA-256 er meget stærk. Det er ikke som det inkrementelle skridt fra MD5
-til SHA1. Den kan vare adskillige årtier, medmindre der sker en massiv
+\enquote{SHA-256 er meget stærk. Det er ikke som det inkrementelle skridt 
+fra MD5 til SHA1. Den kan vare adskillige årtier, medmindre der sker en massiv
 gennembrudsangreb.}
-\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, i et svar på spørgsmål om SHA-256 kollisioner. \cite{satoshi-sha256}}
+\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, i et svar 
+  på spørgsmål om SHA-256 kollisioner. \cite{satoshi-sha256}}
 \end{flushright}\end{samepage}\end{quotation}
 
 Lad os stave tingene ud. $2^{256}$ svarer til følgende tal:
@@ -51,19 +81,36 @@ Lad os stave tingene ud. $2^{256}$ svarer til følgende tal:
     trillion 913 billion 129 million 639 thousand 936.
 \end{samepage}\end{quotation}
 
-Det er mange nonillioner! At forstå dette tal er stort set umuligt. Der er intet i det fysiske univers at sammenligne det med. Det er langt større end antallet af atomer i det observerbare univers. Menneskehjernen er simpelthen ikke lavet til at forstå det.
+Det er mange nonillioner! At forstå dette tal er stort set umuligt. Der er
+intet i det fysiske univers at sammenligne det med. Det er langt større end 
+antallet af atomer i det observerbare univers. Menneskehjernen er simpelthen 
+ikke lavet til at forstå det.
 
 \newpage
 
-En af de bedste visualiseringer af den sande styrke af SHA-256 er en video af Grant Sanderson. Passende navngivet \textit{\enquote{Hvor sikkert er 256 bit sikkerhed?}}\footnote{Se videoen på \url{https://youtu.be/S9JGmA5_unY}}, viser den smukt, hvor stort et 256-bit rum er. Gør dig selv en tjeneste og brug fem minutter på at se den. Ligesom alle andre \textit{3Blue1Brown}-videoer er den ikke kun fascinerende, men også exceptionelt godt lavet. Advarsel: Du kan ende med at falde ned i et matematisk kaninhul.
+En af de bedste visualiseringer af den sande styrke af SHA-256 er en video af 
+Grant Sanderson. Passende navngivet \textit{\enquote{Hvor sikkert er 256 bit 
+sikkerhed?}}\footnote{Se videoen på \url{https://youtu.be/S9JGmA5_unY}}, 
+viser den smukt, hvor stort et 256-bit rum er. Gør dig selv en tjeneste og 
+brug fem minutter på at se den. Ligesom alle andre \textit{3Blue1Brown}-videoer 
+er den ikke kun fascinerende, men også exceptionelt godt lavet. Advarsel: 
+Du kan ende med at falde ned i et matematisk kaninhul.
 
 \begin{center}
   \includegraphics[width=\textwidth]{assets/images/youtube-vid-inverted.png}
-  \captionof{figure}{Illustration af SHA-256 sikkerhed. Oprindeligt grafik af Grant Sanderson alias 3Blue1Brown.}
+  \captionof{figure}{Illustration af SHA-256 sikkerhed. Oprindeligt grafik af 
+  Grant Sanderson alias 3Blue1Brown.}
   \label{fig:youtube-vid-inverted}
 \end{center}
 
-Bruce Schneier~\cite{web:schneier} brugte de fysiske grænser for beregning til at sætte dette tal i perspektiv: selv hvis vi kunne bygge en optimal computer, der ville bruge enhver tilført energi til at vende bits perfekt~\cite{wiki:landauer}, bygge en Dyson-sfære\footnote{En Dyson-sfære er en hypotetisk megakonstruktion, der fuldstændig omgiver en stjerne og fanger en stor procentdel af dens energiudgang.~\cite{wiki:dyson}} omkring vores sol og lade den køre i 100 billioner billioner år, ville vi stadig kun have en $25\%$ chance for at finde en nål i en 256-bit høstak.
+Bruce Schneier~\cite{web:schneier} brugte de fysiske grænser for beregning til 
+at sætte dette tal i perspektiv: selv hvis vi kunne bygge en optimal computer, 
+der ville bruge enhver tilført energi til at vende bits 
+perfekt~\cite{wiki:landauer}, bygge en Dyson-sfære\footnote{En Dyson-sfære er 
+en hypotetisk megakonstruktion, der fuldstændig omgiver en stjerne og fanger 
+en stor procentdel af dens energiudgang.~\cite{wiki:dyson}} omkring vores sol 
+og lade den køre i 100 billioner billioner år, ville vi stadig kun have en 
+$25\%$ chance for at finde en nål i en 256-bit høstak.
 
 \begin{quotation}\begin{samepage}
   \enquote{Disse tal har intet at gøre med teknologien i enhederne;
@@ -71,21 +118,24 @@ Bruce Schneier~\cite{web:schneier} brugte de fysiske grænser for beregning til 
   de antyder kraftigt, at brute-force angreb mod 256-bit nøgler vil være
   ufejlbare, indtil computere er bygget af noget andet end stof
   og besætter noget andet end rum.}
-  \begin{flushright} -- Bruce Schneier\footnote{Bruce Schneier, \textit{Applied Cryptography} \cite{bruce-schneier}}
+  \begin{flushright} -- Bruce Schneier\footnote{Bruce Schneier, 
+    \textit{Applied Cryptography} \cite{bruce-schneier}}
   \end{flushright}\end{samepage}\end{quotation}
   
   
   Det er svært at overvurdere dybden af dette. Stærk kryptografi
   vender magtbalancen af den fysiske verden, vi er så vant til.
-  Uopløselige ting eksisterer ikke i den virkelige verden. Anvend tilstrækkelig kraft,
-  og du vil kunne åbne enhver dør, kasse eller skatkiste.
+  Uopløselige ting eksisterer ikke i den virkelige verden. Anvend tilstrækkelig 
+  kraft, og du vil kunne åbne enhver dør, kasse eller skatkiste.
   
   Bitcoin's skatkiste er meget anderledes. Den er sikret af stærk
   kryptografi, der ikke giver efter for brute force. Og så længe de
   underliggende matematiske antagelser holder, er brute force alt, hvad vi har.
-  Selvfølgelig er der også muligheden for et globalt \$5 skruenøgleangreb (Figur~\ref{fig:xkcd-538}).
-  Men tortur vil ikke fungere for alle bitcoin-adresser, og bitcoins kryptografiske
-  mure vil besejre brute force-angreb. Selv hvis du kommer med kraften fra tusind soler. Bogstaveligt talt.
+  Selvfølgelig er der også muligheden for et globalt \$5 skruenøgleangreb 
+  (Figur~\ref{fig:xkcd-538}). Men tortur vil ikke fungere for alle 
+  bitcoin-adresser, og bitcoins kryptografiske mure vil besejre brute 
+  force-angreb. Selv hvis du kommer med kraften fra tusind soler. 
+  Bogstaveligt talt.
 
 \begin{center}
   \centering
@@ -95,40 +145,60 @@ Bruce Schneier~\cite{web:schneier} brugte de fysiske grænser for beregning til 
 \end{center}
 
 Denne kendsgerning og dens implikationer blev præcist opsummeret i opfordringen
-til kryptografisk forsvar: \textit{\enquote{Intet beløb af tvang vil nogensinde løse
-en matematisk opgave.}}
+til kryptografisk forsvar: \textit{\enquote{Intet beløb af tvang vil 
+nogensinde løse en matematisk opgave.}}
 
 \begin{quotation}\begin{samepage}
-\enquote{Det er ikke åbenlyst, at verden skulle fungere på denne måde. Men på en eller anden måde smiler universet til kryptering.}
-\begin{flushright} -- Julian Assange\footnote{Julian Assange, \textit{A Call to Cryptographic Arms} \cite{call-to-cryptographic-arms}}
+\enquote{Det er ikke åbenlyst, at verden skulle fungere på denne måde. Men på 
+en eller anden måde smiler universet til kryptering.}
+\begin{flushright} -- Julian Assange\footnote{Julian Assange, \textit{A Call 
+  to Cryptographic Arms} \cite{call-to-cryptographic-arms}}
 \end{flushright}\end{samepage}\end{quotation}
 
 Ingen ved endnu med sikkerhed, om universets smil er ægte eller ej. Det
 er muligt, at vores antagelse om matematiske asymmetrier er forkert, og
-vi finder ud af, at P faktisk er lig med NP \cite{wiki:pnp}, eller vi finder overraskende hurtige
-løsninger på specifikke problemer \cite{wiki:discrete-log}, som vi i øjeblikket antager er svære.
-Hvis det skulle være tilfældet, vil kryptografi, som vi kender det, ophøre med at
-eksistere, og implikationerne ville sandsynligvis ændre verden ud over
-genkendelse.
+vi finder ud af, at P faktisk er lig med NP \cite{wiki:pnp}, eller vi finder 
+overraskende hurtige løsninger på specifikke problemer \cite{wiki:discrete-log}, 
+som vi i øjeblikket antager er svære. Hvis det skulle være tilfældet, vil 
+kryptografi, som vi kender det, ophøre med at eksistere, og implikationerne 
+ville sandsynligvis ændre verden ud over genkendelse.
 
 \begin{quotation}\begin{samepage}
 \enquote{Vires in Numeris} = \enquote{Styrke i Tal}\footnote{\textit{Vires in Numeris} blev først foreslået som en Bitcoin-motto af bitcointalk-brugeren \textit{epii}~\cite{epii}}
 \end{samepage}\end{quotation}
 
-\textit{Vires in numeris} er ikke kun en fængende motto brugt af bitcoin-entusiaster. Erkendelsen af, at der er en uudgrundelig styrke at finde i tal, er en dybdegående erkendelse. At forstå dette og den omvending af eksisterende magtbalance, det muliggør, har ændret mit syn på verden og den fremtid, der venter os.
+\textit{Vires in numeris} er ikke kun en fængende motto brugt af 
+bitcoin-entusiaster. Erkendelsen af, at der er en uudgrundelig styrke at finde 
+i tal, er en dybdegående erkendelse. At forstå dette og den omvending af 
+eksisterende magtbalance, det muliggør, har ændret mit syn på verden og den 
+fremtid, der venter os.
 
-Ét direkte resultat af dette er, at du ikke behøver at spørge nogen om tilladelse for at deltage i Bitcoin. Der er ingen side at tilmelde sig, ingen virksomhed ansvarlig, ingen regeringsinstans at sende ansøgningsformularer til. Bare generer et stort tal, og du er stort set klar til at gå i gang. Den centrale myndighed for kontoskabelse er matematik. Og kun Gud ved, hvem der har kontrol over det.
+Ét direkte resultat af dette er, at du ikke behøver at spørge nogen om 
+tilladelse for at deltage i Bitcoin. Der er ingen side at tilmelde sig, ingen 
+virksomhed ansvarlig, ingen regeringsinstans at sende ansøgningsformularer 
+til. Bare generer et stort tal, og du er stort set klar til at gå i gang. 
+Den centrale myndighed for kontoskabelse er matematik. Og kun Gud ved, hvem 
+der har kontrol over det.
 
 \begin{center}
   \includegraphics[width=\textwidth]{assets/images/elliptic-curve-examples.png}
-  \captionof{figure}{Eksempler på elliptiske kurver. Grafik cc-by-sa Emmanuel Boutet.}
+  \captionof{figure}{Eksempler på elliptiske kurver. Grafik cc-by-sa Emmanuel 
+  Boutet.}
   \label{fig:elliptic-curve-examples}
 \end{center}
 
-Bitcoin er bygget på vores bedste forståelse af virkeligheden. Selvom der stadig er mange åbne problemer inden for fysik, datalogi og matematik, er vi ret sikre på nogle ting. At der er en asymmetri mellem at finde løsninger og validere korrektheden af disse løsninger er en sådan ting. At beregning kræver energi er en anden. Med andre ord: at finde en nål i en høstak er sværere end at tjekke, om det spidse objekt i din hånd faktisk er en nål eller ej. Og at finde nålen kræver arbejde.
+Bitcoin er bygget på vores bedste forståelse af virkeligheden. Selvom der 
+stadig er mange åbne problemer inden for fysik, datalogi og matematik, er vi 
+ret sikre på nogle ting. At der er en asymmetri mellem at finde løsninger og
+validere korrektheden af disse løsninger er en sådan ting. At beregning kræver 
+energi er en anden. Med andre ord: at finde en nål i en høstak er sværere end 
+at tjekke, om det spidse objekt i din hånd faktisk er en nål eller ej. Og at 
+finde nålen kræver arbejde.
 
-Uendeligheden af Bitcoins adresseområde er virkelig overvældende. Antallet af private nøgler 
-endnu mere. Det er fascinerende, hvor meget af vores moderne verden reduceres til sandsynligheden for at finde en nål i en uudgrundeligt stor høstak. Jeg er nu mere opmærksom på denne kendsgerning end nogensinde.
+Uendeligheden af Bitcoins adresseområde er virkelig overvældende. Antallet af 
+private nøgler endnu mere. Det er fascinerende, hvor meget af vores moderne 
+verden reduceres til sandsynligheden for at finde en nål i en uudgrundeligt 
+stor høstak. Jeg er nu mere opmærksom på denne kendsgerning end nogensinde.
 
 \paragraph{Bitcoin lærte mig, at der er styrke i tal.}
 

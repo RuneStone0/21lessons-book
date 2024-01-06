@@ -9,13 +9,17 @@ Bitcoin sigter mod at erstatte, eller i det mindste give et alternativ til,
 konventionel valuta. Konventionel valuta er bundet til en centraliseret
 myndighed, uanset om vi taler om lovligt betalingsmiddel som den amerikanske
 dollar eller moderne monopolpenge som Fortnite's V-Bucks. I begge
-eksempler er du bundet til at stole på den centrale myndighed for at udstede, administrere
-og cirkulere dine penge. Bitcoin løsner denne binding, og hovedproblemet
-som Bitcoin løser, er tillidsproblemet.
+eksempler er du bundet til at stole på den centrale myndighed for at udstede, 
+administrere og cirkulere dine penge. Bitcoin løsner denne binding, og 
+hovedproblemet som Bitcoin løser, er tillidsproblemet.
 
 \begin{quotation}\begin{samepage}
-\enquote{Det grundlæggende problem med konventionel valuta er al den tillid, der er nødvendig for at få det til at fungere. [...] Hvad der er nødvendigt, er et elektronisk betalingssystem baseret på kryptografisk bevis i stedet for tillid.}
-\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, officiel Bitcoin-annoncering~\cite{bitcoin-announcement} og whitepaper~\cite{whitepaper}}
+\enquote{Det grundlæggende problem med konventionel valuta er al den tillid, 
+der er nødvendig for at få det til at fungere. [...] Hvad der er nødvendigt, 
+er et elektronisk betalingssystem baseret på kryptografisk bevis i stedet for 
+tillid.} \begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto,
+  officiel Bitcoin-annoncering~\cite{bitcoin-announcement} og 
+  whitepaper~\cite{whitepaper}}
 \end{flushright}\end{samepage}\end{quotation}
 
 Bitcoin løser tillidsproblemet ved at være fuldstændig decentraliseret,
@@ -23,38 +27,42 @@ uden central server eller betroede parter. Ikke engang betroede \textit{tredje}
 parter, men betroede parter, punktum. Når der ikke er nogen central
 myndighed, er der ganske enkelt ingen at stole på. Total decentralisering
 er innovationen. Det er roden til Bitcoin's modstandsdygtighed, årsagen
-til at det stadig er i live. Decentralisering er også grunden til, at vi har mining,
-noder, hardwarewallets, og ja, blockchain. Det eneste, du
+til at det stadig er i live. Decentralisering er også grunden til, at vi har 
+mining, noder, hardwarewallets, og ja, blockchain. Det eneste, du
 skal \enquote{stole på}, er, at vores forståelse af matematik og fysik
-ikke er helt ude af kurs, og at flertallet af minearbejdere handler ærligt (hvad de har incitament til at gøre).
+ikke er helt ude af kurs, og at flertallet af minearbejdere handler ærligt 
+(hvad de har incitament til at gøre).
 
 Mens den almindelige verden opererer under antagelsen om \textit{\enquote{stol
 på, men verificér,}} opererer Bitcoin under antagelsen om \textit{\enquote{stol
-ikke på, verificér.}} Satoshi gjorde vigtigheden af at fjerne tillid meget tydelig både i
-introduktionen og konklusionen af Bitcoin whitepaper.
+ikke på, verificér.}} Satoshi gjorde vigtigheden af at fjerne tillid meget 
+tydelig både i introduktionen og konklusionen af Bitcoin whitepaper.
 
 \begin{quotation}\begin{samepage}
 \enquote{Konklusion: Vi har foreslået et system til elektroniske transaktioner
 uden at stole på tillid.}
-\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, Bitcoin whitepaper~\cite{whitepaper}}
+\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, Bitcoin 
+  whitepaper~\cite{whitepaper}}
 \end{flushright}\end{samepage}\end{quotation}
 
 Bemærk, at \textit{uden at stole på tillid} bruges i en meget specifik kontekst
 her. Vi taler om betroede tredjeparter, dvs. andre enheder,
-som du stoler på at producere, opbevare og behandle dine penge. Det antages f.eks.,
-at du kan stole på din computer.
+som du stoler på at producere, opbevare og behandle dine penge. Det antage 
+f.eks., at du kan stole på din computer.
 
 Som Ken Thompson viste i sin Turing Award-forelæsning, er tillid en
 ekstremt vanskelig ting i den beregningsmæssige verden. Når du kører et
 program, er du nødt til at stole på al slags software (og hardware), som
 i teorien kunne ændre programmet, du forsøger at køre, på en ondsindet
-måde. Som Thompson opsummerede i sin \textit{Refleksioner om at stole på tillid}:
+måde. Som Thompson opsummerede i sin \textit{Refleksioner om at stole på 
+tillid}:
 \enquote{Moralen er åbenlys. Du kan ikke stole på kode, som du ikke har skabt
 helt selv.}~\cite{trusting-trust}
 
 \begin{center}
   \includegraphics[width=\textwidth]{assets/images/ken-thompson-hack.png}
-  \captionof{figure}{Uddrag fra Ken Thompsons papir 'Refleksioner om at stole på tillid'}
+  \captionof{figure}{Uddrag fra Ken Thompsons papir 'Refleksioner om at 
+  stole på tillid'}
   \label{fig:ken-thompson-hack}
 \end{center}
 
@@ -62,9 +70,10 @@ Thompson viste, at selv hvis du har adgang til kildekoden,
 kan din kompilator --- eller enhver anden programbehandlings- eller
 hardwareprogram --- være kompromitteret, og det ville være
 meget vanskeligt at opdage denne bagdør. Således eksisterer der i praksis ikke
-et virkelig \textit{trustless} system. Du ville være nødt til at skabe alt din software \textit{og} alt din
-hardware (assemblers, kompilatorer, linkers, osv.) fra bunden,
-uden hjælp fra nogen ekstern software eller software-understøttet maskineri.
+et virkelig \textit{trustless} system. Du ville være nødt til at skabe alt 
+din software \textit{og} alt din hardware (assemblers, kompilatorer, linkers,
+osv.) fra bunden, uden hjælp fra nogen ekstern software eller 
+software-understøttet maskineri.
 
 \begin{quotation}\begin{samepage}
 \enquote{Hvis du ønsker at lave en æbletærte fra bunden, skal du først opfinde
@@ -74,27 +83,31 @@ universet.}
 
 Ken Thompson Hack er en særligt genial og svær at opdage bagdør,
 så lad os hurtigt se på en svær at opdage bagdør, der fungerer uden at
-modificere nogen software. Forskere fandt en måde at kompromittere sikkerhedskritisk
-hardware ved at ændre polariteten af siliciumforureninger.~\cite{becker2013stealthy} Ved blot at ændre de fysiske egenskaber
-af det materiale, som computerchips er lavet af, lykkedes det dem at kompromittere en
-kryptografisk sikker tilfældig talgenerator. Da denne ændring ikke kan ses,
-kan bagdøren ikke opdages ved optisk inspektion, hvilket er en af de
-vigtigste metoder til at opdage manipulation af chips som disse.
+modificere nogen software. Forskere fandt en måde at kompromittere 
+sikkerhedskritisk hardware ved at ændre polariteten af 
+siliciumforureninger.~\cite{becker2013stealthy} Ved blot at ændre de fysiske 
+egenskaber af det materiale, som computerchips er lavet af, lykkedes det dem 
+at kompromittere en kryptografisk sikker tilfældig talgenerator. Da denne
+ændring ikke kan ses, kan bagdøren ikke opdages ved optisk inspektion, 
+hvilket er en af de vigtigste metoder til at opdage manipulation af chips 
+som disse.
 
 \begin{center}
   \includegraphics[width=\textwidth]{assets/images/stealthy-hardware-trojan.png}
-  \captionof{figure}{Stealthy Dopant-Level Hardware Trojans af Becker, Regazzoni, Paar, Burleson}
+  \captionof{figure}{Stealthy Dopant-Level Hardware Trojans af Becker, 
+  Regazzoni, Paar, Burleson}
   \label{fig:stealthy-hardware-trojan}
 \end{center}
 
 Lyder det skræmmende? Nå, selv hvis du var i stand til at bygge alt fra
-bunden, ville du stadig være nødt til at stole på den underliggende matematik. Du
-ville være nødt til at stole på, at \textit{secp256k1} er en elliptisk kurve uden
-bagdøre. Ja, ondsindede bagdøre kan indsættes i de matematiske
-grundlag af kryptografiske funktioner, og man kan argumentere for, at dette allerede
-er sket mindst én gang.~\cite{wiki:Dual_EC_DRBG} Der er gode grunde til at være paranoid, og
-det faktum, at alt lige fra din hardware, til din software, til de
-elliptiske kurver, der bruges, kan have bagdøre~\cite{wiki:backdoors}, er nogle af dem.
+bunden, ville du stadig være nødt til at stole på den underliggende matematik. 
+Du ville være nødt til at stole på, at \textit{secp256k1} er en elliptisk kurve 
+uden bagdøre. Ja, ondsindede bagdøre kan indsættes i de matematiske
+grundlag af kryptografiske funktioner, og man kan argumentere for, at dette 
+allerede er sket mindst én gang.~\cite{wiki:Dual_EC_DRBG} Der er gode grunde 
+til at være paranoid, og det faktum, at alt lige fra din hardware, til din 
+software, til de elliptiske kurver, der bruges, kan have 
+bagdøre~\cite{wiki:backdoors}, er nogle af dem.
 
 \begin{quotation}\begin{samepage}
   \enquote{Don't trust. Verify.}
@@ -103,53 +116,60 @@ elliptiske kurver, der bruges, kan have bagdøre~\cite{wiki:backdoors}, er nogle
 
 De ovenstående eksempler burde illustrere, at \textit{trustless} computing er
 utopisk. Bitcoin er sandsynligvis det system, der kommer tættest på denne
-utopi, men det er stadig \textit{trust-minimized} --- med det formål at fjerne tillid
-hvor det er muligt. Man kan argumentere for, at kæden af tillid aldrig ender, da
-du også skal stole på, at beregning kræver energi, at P ikke er lig med NP, og at du rent faktisk er i virkeligheden og ikke
+utopi, men det er stadig \textit{trust-minimized} --- med det formål at fjerne 
+tillid hvor det er muligt. Man kan argumentere for, at kæden af tillid aldrig 
+ender, da du også skal stole på, at beregning kræver energi, at P ikke er 
+lig med NP, og at du rent faktisk er i virkeligheden og ikke
 fanget i en simulering af ondsindede aktører.
 
-Udviklere arbejder på værktøjer og procedurer for at minimere al resterende tillid
-endnu mere. For eksempel skabte Bitcoin-udviklere
-Gitian\footnote{\url{https://gitian.org/}}, som er en metode til softwaredistribution
-for at skabe deterministiske builds. Ideen er, at hvis flere udviklere
-er i stand til at reproducere identiske binære filer, reduceres risikoen for ondsindet manipulation.
-Fancy bagdøre er ikke den eneste angrebsvektor. Enkle trusler om
-afpresning er også reelle trusler. Ligesom i hovedprotokollen bruges decentralisering
-til at minimere tillid.
+Udviklere arbejder på værktøjer og procedurer for at minimere al resterende 
+tillid endnu mere. For eksempel skabte Bitcoin-udviklere
+Gitian\footnote{\url{https://gitian.org/}}, som er en metode til 
+softwaredistribution for at skabe deterministiske builds. Ideen er, at hvis 
+flere udviklere er i stand til at reproducere identiske binære filer, reduceres 
+risikoen for ondsindet manipulation. Fancy bagdøre er ikke den eneste 
+angrebsvektor. Enkle trusler om afpresning er også reelle trusler. Ligesom i 
+hovedprotokollen bruges decentralisering til at minimere tillid.
 
-Der gøres forskellige bestræbelser for at forbedre på hønen-og-ægget-problemet ved
-bootstrapping, som Ken Thompsons hack så brillant påpegede~\cite{web:bootstrapping}. En sådan indsats er
-Guix\footnote{\url{https://guix.gnu.org}} (udtales \textit{geeks}), som
-bruger funktionelt deklareret pakkehåndtering, hvilket fører til bit-for-bit
-reproducerbare builds efter design. Resultatet er, at du ikke længere behøver at stole på nogen
-software-leverende servere, da du kan verificere, at den serverede binære fil
-ikke er blevet manipuleret ved at genopbygge den fra bunden. For nylig blev der
-flet en pull-anmodning for at integrere Guix i Bitcoin-buildprocessen.\footnote{Se PR 15277 af \texttt{bitcoin-core}: \\ \url{https://github.com/bitcoin/bitcoin/pull/15277}}
+Der gøres forskellige bestræbelser for at forbedre på hønen-og-ægget-problemet 
+ved bootstrapping, som Ken Thompsons hack så brillant 
+påpegede~\cite{web:bootstrapping}. En sådan indsats er Guix
+\footnote{\url{https://guix.gnu.org}} (udtales \textit{geeks}), som bruger 
+funktionelt deklareret pakkehåndtering, hvilket fører til bit-for-bit
+reproducerbare builds efter design. Resultatet er, at du ikke længere 
+behøver at stole på nogen software-leverende servere, da du kan verificere, at 
+den serverede binære fil ikke er blevet manipuleret ved at genopbygge den fra 
+bunden. For nylig blev der flet en pull-anmodning for at integrere Guix i 
+Bitcoin-buildprocessen.\footnote{Se PR 15277 af 
+\texttt{bitcoin-core}: \\ \url{https://github.com/bitcoin/bitcoin/pull/15277}}
 
 \begin{center}
-  \includegraphics[width=\textwidth]{assets/images/guix-bootstrap-dependencies.png}
+  \includegraphics[width=\textwidth]
+  {assets/images/guix-bootstrap-dependencies.png}
   \captionof{figure}{Hvad kom først, hønen eller ægget?}
   \label{fig:guix-bootstrap-dependencies}
 \end{center}
 
- heldigvis er Bitcoin ikke afhængig af en enkelt algoritme eller stykke
+heldigvis er Bitcoin ikke afhængig af en enkelt algoritme eller stykke
 hardware. En effekt af Bitcoins radikale decentralisering er en
-distribueret sikkerhedsmodel. Selvom bagdøre beskrevet ovenfor ikke skal tages let,
-er det usandsynligt, at hver softwarewallet,
+distribueret sikkerhedsmodel. Selvom bagdøre beskrevet ovenfor ikke skal 
+tages let, er det usandsynligt, at hver softwarewallet,
 hver hardwarewallet, hver kryptografiske bibliotek, hver noderealisering
 og hver kompilator af hvert sprog er kompromitteret.
 Muligt, men meget usandsynligt.
 
-Bemærk, at du kan generere en privat nøgle uden at stole på nogen beregningsmæssig
-hardware eller software. Du kan kaste en mønt~\cite{antonopoulos2014mastering} et
-par gange, selvom afhængigt af din mønt og kastestil kan denne kilde
-af tilfældighed måske ikke være tilstrækkelig tilfældig. Der er en grund til, at lagringsprotokoller som Glacier\footnote{\url{https://glacierprotocol.org/}} råder til
-at bruge terninger af kasino-kvalitet som en af to kilder til entropi.
+Bemærk, at du kan generere en privat nøgle uden at stole på nogen 
+beregningsmæssig hardware eller software. Du kan kaste en 
+mønt~\cite{antonopoulos2014mastering} et par gange, selvom afhængigt af din 
+mønt og kastestil kan denne kilde af tilfældighed måske ikke være 
+tilstrækkelig tilfældig. Der er en grund til, at lagringsprotokoller som 
+Glacier\footnote{\url{https://glacierprotocol.org/}} råder til at bruge 
+terninger af kasino-kvalitet som en af to kilder til entropi.
 
-Bitcoin tvang mig til at reflektere over, hvad det egentlig indebærer ikke at stole på nogen.
-Det øgede min bevidsthed om bootstrapping-problemet og den implicitte
-kæde af tillid ved udvikling og kørsel af software. Det øgede også min
-bevidsthed om de mange måder, hvorpå software og hardware kan blive
+Bitcoin tvang mig til at reflektere over, hvad det egentlig indebærer ikke at 
+stole på nogen. Det øgede min bevidsthed om bootstrapping-problemet og den 
+implicitte kæde af tillid ved udvikling og kørsel af software. Det øgede også 
+min bevidsthed om de mange måder, hvorpå software og hardware kan blive
 kompromitteret.
 
 \paragraph{Bitcoin lærte mig ikke at stole, men at verificere.}

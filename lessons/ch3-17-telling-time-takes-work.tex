@@ -5,33 +5,63 @@
 \enquote{Kære, kære! Jeg kommer for sent!}
 \end{chapquote}
 
-Det bliver ofte sagt, at bitcoins udvindes, fordi tusinder af computere arbejder på at løse \textit{meget komplekse} matematiske problemer. Visse problemer skal løses, og hvis du beregner det rigtige svar, \enquote{producerer} du en bitcoin. Mens denne forenklede opfattelse af bitcoin-minedrift måske er lettere at formidle, går den lidt forbi pointen. Bitcoins bliver ikke produceret eller skabt, og hele affæren handler ikke rigtig om at løse bestemte matematiske problemer. Desuden er matematikken ikke særlig kompleks. Det komplekse er at \textit{fortælle tiden} i et decentraliseret system.
+Det bliver ofte sagt, at bitcoins udvindes, fordi tusinder af computere 
+arbejder på at løse \textit{meget komplekse} matematiske problemer. Visse 
+problemer skal løses, og hvis du beregner det rigtige svar, 
+\enquote{producerer} du en bitcoin. Mens denne forenklede opfattelse af 
+bitcoin-minedrift måske er lettere at formidle, går den lidt forbi pointen. 
+Bitcoins bliver ikke produceret eller skabt, og hele affæren handler ikke 
+rigtig om at løse bestemte matematiske problemer. Desuden er matematikken 
+ikke særlig kompleks. Det komplekse er at \textit{fortælle tiden} i et 
+decentraliseret system.
 
-Som beskrevet i whitepaperet er proof-of-work-systemet (også kaldet minedrift) en måde at implementere en distribueret tidsstempelserver.
+Som beskrevet i whitepaperet er proof-of-work-systemet (også kaldet minedrift) 
+en måde at implementere en distribueret tidsstempelserver.
 
 \begin{center}
-  \includegraphics[width=\textwidth]{assets/images/bitcoin-whitepaper-timestamp-wide.png}
+  \includegraphics[width=\textwidth]
+  {assets/images/bitcoin-whitepaper-timestamp-wide.png}
   \captionof{figure}{Uddrag fra whitepaperet. Sagde nogen tidskæde?}
   \label{fig:bitcoin-whitepaper-timestamp-wide}
 \end{center}
 
-Da jeg først lærte, hvordan Bitcoin fungerer, troede jeg også, at proof-of-work er ineffektivt og spild af ressourcer. Efter et stykke tid begyndte jeg dog at ændre min opfattelse af Bitcoin's energiforbrug~\cite{gigi:energy}. Det ser ud til, at proof-of-work stadig er bredt misforstået i dag, i året 10 AB (efter Bitcoin).
+Da jeg først lærte, hvordan Bitcoin fungerer, troede jeg også, at 
+proof-of-work er ineffektivt og spild af ressourcer. Efter et stykke tid 
+begyndte jeg dog at ændre min opfattelse af Bitcoin's 
+energiforbrug~\cite{gigi:energy}. Det ser ud til, at proof-of-work stadig 
+er bredt misforstået i dag, i året 10 AB (efter Bitcoin).
 
-Da problemerne, der skal løses i proof-of-work, er opfundne, synes mange mennesker at tro, at det er \textit{unyttigt} arbejde. Hvis fokus udelukkende er på beregningen, er dette en forståelig konklusion. Men Bitcoin handler ikke om beregning. Det handler om \textit{uafhængigt at blive enige om rækkefølgen af tingene.}
+Da problemerne, der skal løses i proof-of-work, er opfundne, synes mange 
+mennesker at tro, at det er \textit{unyttigt} arbejde. Hvis fokus udelukkende 
+er på beregningen, er dette en forståelig konklusion. Men Bitcoin handler 
+ikke om beregning. Det handler om \textit{uafhængigt at blive enige om 
+rækkefølgen af tingene.}
 
-Proof-of-work er et system, hvor alle kan validere, hvad der skete, og i hvilken rækkefølge det skete. Denne uafhængige validering er det, der fører til konsensus, en individuel enighed mellem flere parter om, hvem der ejer hvad.
+Proof-of-work er et system, hvor alle kan validere, hvad der skete, og i 
+hvilken rækkefølge det skete. Denne uafhængige validering er det, der fører 
+til konsensus, en individuel enighed mellem flere parter om, hvem der ejer hvad.
 
-I et radikalt decentraliseret miljø har vi ikke luksusen af absolut tid. Enhver ur ville introducere en betroet tredjepart, et centralt punkt i systemet, som man skulle stole på og kunne angribes. \enquote{Tid er rodproblemet,} som Grisha Trubetskoy påpeger~\cite{pow-clock}. Og Satoshi løste genialt dette problem ved at implementere et decentraliseret ur via en proof-of-work blockchain. Alle er enige på forhånd om, at kæden med det største kumulative arbejde er sandhedens kilde. Det er per definition, hvad der faktisk skete. Denne enighed er det, der nu er kendt som Nakamoto-konsensus.
+I et radikalt decentraliseret miljø har vi ikke luksusen af absolut tid. 
+Enhver ur ville introducere en betroet tredjepart, et centralt punkt i 
+systemet, som man skulle stole på og kunne angribes. \enquote{Tid er 
+rodproblemet,} som Grisha Trubetskoy påpeger~\cite{pow-clock}. Og Satoshi 
+løste genialt dette problem ved at implementere et decentraliseret ur via 
+en proof-of-work blockchain. Alle er enige på forhånd om, at kæden med det 
+største kumulative arbejde er sandhedens kilde. Det er per definition, hvad 
+der faktisk skete. Denne enighed er det, der nu er kendt som Nakamoto-konsensus.
 
 \begin{quotation}\begin{samepage}
-  \enquote{Netværket tidsstempler transaktioner ved at hashe dem ind i en løbende
-  kæde, som fungerer som bevis på sekvensen af begivenheder, der er vidne til.}
-  \begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, Bitcoin-whitepaperet~\cite{whitepaper}}
+  \enquote{Netværket tidsstempler transaktioner ved at hashe dem ind i en 
+  løbende kæde, som fungerer som bevis på sekvensen af begivenheder, der er 
+  vidne til.}
+  \begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, 
+    Bitcoin-whitepaperet~\cite{whitepaper}}
 \end{flushright}\end{samepage}\end{quotation}
   
 Uden en sammenhængende måde at fortælle tiden på er der ingen konsekvent måde at
 skelne før fra efter. Pålidelig ordning er umulig. Som nævnt
-ovenfor er Nakamoto-konsensus Bitcoins måde at konsekvent fortælle tiden på. Systemets incitamentsstruktur producerer et sandsynligt,
+ovenfor er Nakamoto-konsensus Bitcoins måde at konsekvent fortælle tiden på. 
+Systemets incitamentsstruktur producerer et sandsynligt,
 decentraliseret ur, ved at udnytte både grådighed og egeninteresse hos
 konkurrerende deltagere. Det faktum, at dette ur er upræcist, er
 ligegyldigt, fordi begivenhedernes rækkefølge er efterhånden entydig og kan
